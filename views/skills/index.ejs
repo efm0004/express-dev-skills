@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Emily's Dev Skills</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Emily's Dev Skills</h1>
+    <ul>
+        <% skills.forEach(function(t, idx) { %>
+            <li>
+                <a href="/skills<%= idx %>"><%= t.skill %></a></a>
+            </li>
+        <% }); %>
+    </ul>
+  </body>
+</html>
